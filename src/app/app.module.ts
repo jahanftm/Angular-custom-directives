@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { CustomDirectivesComponent } from './custom-directives/custom-directives.component';
 import { HoverDirectiveDirective } from './custom-directives/hover-directive.directive';
 import { TooltipDirectiveDirective } from './custom-directives/tooltip-directive.directive';
+import { HighlightDirectiveDirective } from './custom-directives/highlight-directive.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     CustomDirectivesComponent,
     HoverDirectiveDirective,
-    TooltipDirectiveDirective
+    TooltipDirectiveDirective,
+    HighlightDirectiveDirective
 
   ],
   imports: [

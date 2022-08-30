@@ -15,11 +15,11 @@ import {Directive, ElementRef, OnInit} from '@angular/core';
     '[style.bottom]': '"0"',
     '[style.top]': '"50%"',
     '[style.left]': '"50%"',
-    '[style.transform]': '"translate(-50%, -50%)"',
+    '[style.transform]': '"translate(-50%, 0)"',
     '[style.opacity]': '"0"',
     '[style.transition]': '"opacity 0.2s"',
     '[style.border]': '"1px solid #cccccc"',
-    '[style.height]': '"30px"',
+    '[style.height]': '"20px"',
     '[style.visibility]': '"hidden"',
   }
 })
@@ -31,7 +31,6 @@ export class TooltipDirectiveDirective implements OnInit {
   ngOnInit(): void {
     this.el.nativeElement.parentNode.style.position = 'relative';
     this.el.nativeElement.parentNode.addEventListener("mouseover", () => {
-      console.log(this.el)
       this.el.nativeElement.style.visibility = 'visible';
       this.el.nativeElement.style.opacity = '1';
     });
@@ -42,15 +41,5 @@ export class TooltipDirectiveDirective implements OnInit {
     });
 
 }
-
-//   this.el.nativeElement.parentNode.style.position = 'relative';
-//   this.el.nativeElement.parentNode.addEventListener("mouseover", f => {
-//   this.el.nativeElement.style.visibility = 'visible';
-//   this.el.nativeElement.style.opacity = '1';
-// });
-// this.el.nativeElement.parentNode.addEventListener("mouseout", f => {
-//   this.el.nativeElement.style.visibility = 'hidden';
-//   this.el.nativeElement.style.opacity = '0';
-// });
 
 }
