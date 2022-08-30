@@ -23,7 +23,7 @@ import {Directive, ElementRef, OnInit} from '@angular/core';
     '[style.visibility]': '"hidden"',
   }
 })
-export class TooltipDirectiveDirective implements OnInit {
+export class TooltipDirective implements OnInit {
 
   constructor(private el: ElementRef) {
   }

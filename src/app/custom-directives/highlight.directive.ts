@@ -7,7 +7,7 @@ import {Directive, ElementRef, Input, OnInit} from '@angular/core';
     '[style.color]': '"#ffffff"',
   }
 })
-export class HighlightDirectiveDirective implements OnInit{
+export class HighlightDirective implements OnInit{
 
   @Input()
   backgroundColor: string = 'rgb(217 163 0)';

@@ -4,17 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CustomDirectivesComponent } from './custom-directives/custom-directives.component';
-import { HoverDirectiveDirective } from './custom-directives/hover-directive.directive';
-import { TooltipDirectiveDirective } from './custom-directives/tooltip-directive.directive';
-import { HighlightDirectiveDirective } from './custom-directives/highlight-directive.directive';
+import { HoverDirective } from './custom-directives/hover.directive';
+import { TooltipDirective } from './custom-directives/tooltip.directive';
+import { HighlightDirective } from './custom-directives/highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     CustomDirectivesComponent,
-    HoverDirectiveDirective,
-    TooltipDirectiveDirective,
-    HighlightDirectiveDirective
+    HoverDirective,
+    TooltipDirective,
+    HighlightDirective
 
   ],
   imports: [
