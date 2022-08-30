@@ -23,7 +23,7 @@
 <section>
   <h2>custom tooltip directive</h2>
   <span>there is a tooltip for this text.
-    <span toolTip style="opacity: 1">tooltip :)</span>
+    <span toolTip>tooltip :)</span>
   </span>
   <br>
   <br>
@@ -36,4 +36,12 @@
   <br>
   <h2>custom hover directive</h2>
   <p hover>there is hover for this line</p>
+  <br>
+  <br>
+  <br>
+  <h2>canAccess directive based on user permissions</h2>
+  <div class="box" *uiCanAccess = "'ADMIN'">If you have ADMIN permission, you can see this box</div>
+  <div class="box" *uiCanAccess = "'USER'">If you have USER permission, you can see this box</div>
+  <div class="box" *uiCanAccess = "'SUPERVISOR'">If you have SUPERVISOR permission, you can see this box</div>
+  <div></div>
 </section>
