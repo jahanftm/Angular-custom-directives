@@ -8,6 +8,7 @@ import {HoverDirective} from './custom-directives/hover.directive';
 import {TooltipDirective} from './custom-directives/tooltip.directive';
 import {HighlightDirective} from './custom-directives/highlight.directive';
 import {UiCanAccessDirective} from "./custom-directives/ui-can-access.directive";
+import { VideoDirective } from './custom-directives/video.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {UiCanAccessDirective} from "./custom-directives/ui-can-access.directive"
     HoverDirective,
     TooltipDirective,
     HighlightDirective,
-    UiCanAccessDirective
+    UiCanAccessDirective,
+    VideoDirective
 
   ],
   imports: [

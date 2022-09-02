@@ -43,5 +43,15 @@
   <div class="box" *uiCanAccess = "'ADMIN'">If you have ADMIN permission, you can see this box</div>
   <div class="box" *uiCanAccess = "'USER'">If you have USER permission, you can see this box</div>
   <div class="box" *uiCanAccess = "'SUPERVISOR'">If you have SUPERVISOR permission, you can see this box</div>
-  <div></div>
+  <br>
+  <br>
+  <br>
+  <h2>custom video directive</h2>
+  <div>
+    it starts playing when the mouse cursor gets over it and pauses when the mouse cursor goes away from the video.
+  </div>
+  <br>
+  <video controls width="550" appVideo>
+    <source src="https://www.angulartraining.com/Cybertruck.mp4" />
+  </video>
 </section>
