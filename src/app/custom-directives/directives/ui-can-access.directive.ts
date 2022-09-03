@@ -1,5 +1,5 @@
 import {Directive, Input, OnInit, TemplateRef, ViewContainerRef} from '@angular/core';
-import {PermissionsService} from "../service/permissions.service";
+import {PermissionsService} from "../../service/permissions.service";
 
 @Directive({
   selector: '[uiCanAccess]'

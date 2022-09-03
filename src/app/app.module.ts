@@ -4,11 +4,13 @@ import {BrowserModule} from '@angular/platform-browser';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {CustomDirectivesComponent} from './custom-directives/custom-directives.component';
-import {HoverDirective} from './custom-directives/hover.directive';
-import {TooltipDirective} from './custom-directives/tooltip.directive';
-import {HighlightDirective} from './custom-directives/highlight.directive';
-import {UiCanAccessDirective} from "./custom-directives/ui-can-access.directive";
-import { VideoDirective } from './custom-directives/video.directive';
+import {HoverDirective} from './custom-directives/directives/hover.directive';
+import {TooltipDirective} from './custom-directives/directives/tooltip.directive';
+import {HighlightDirective} from './custom-directives/directives/highlight.directive';
+import {UiCanAccessDirective} from "./custom-directives/directives/ui-can-access.directive";
+import {VideoDirective} from './custom-directives/directives/video.directive';
+import {LayoutComponent} from './layout/layout.component';
+import { ToggleDirective } from './custom-directives/directives/toggle.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { VideoDirective } from './custom-directives/video.directive';
     TooltipDirective,
     HighlightDirective,
     UiCanAccessDirective,
-    VideoDirective
+    VideoDirective,
+    LayoutComponent,
+    ToggleDirective
 
   ],
   imports: [

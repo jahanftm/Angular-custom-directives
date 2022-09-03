@@ -13,3 +13,23 @@ h2{
   border: 1px dashed olivedrab;
   margin: 20px 0;
 }
+
+.background{
+  background-color: olivedrab;
+}
+
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 200px;
+  height: 100px;
+  background-color: crimson;
+  transition: 0.3s linear;
+}
+
+.box-transformed {
+  transform: scaleX(0.5);
+
+}
